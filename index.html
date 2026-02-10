@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Rem</title>
+    <title>Happy Birthday Remmy</title>
     
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -321,21 +321,18 @@
     </div>
 
     <script>
-        // 1. The Lines
+        // 1. The Lines - UPDATED TO 3 SPECIFIC LINES
         const baseLines = [
-            "i love kako",
-            "kako is my wifey",
-            "i am kakos cutu wifey",
-            "I love u kako",
-            "Lets sex kako",
-            "Lets kiss kako"
+            "i love u kako",
+            "i wanna sex w kako",
+            "i wanna kiss kako"
         ];
 
         let allLines = [];
         
-        // 10 LINES
-        for (let i = 0; i < 10; i++) {
-            allLines.push(baseLines[i % baseLines.length]);
+        // CHANGED TO 3 LINES LOOP
+        for (let i = 0; i < 3; i++) {
+            allLines.push(baseLines[i]);
         }
 
         // 2. Render the lines
@@ -343,7 +340,8 @@
         allLines.forEach((line, index) => {
             const div = document.createElement('div');
             div.className = 'line-item';
-            div.innerText = (index + 1) + ". " + line;
+            // REMOVED NUMBERING HERE as requested
+            div.innerText = line;
             listContainer.appendChild(div);
         });
 
@@ -393,5 +391,4 @@
 
     </script>
 </body>
-
 </html>
